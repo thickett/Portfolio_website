@@ -1,6 +1,3 @@
-.generic{
-   align-items: center;
-   justify-content: center;
-   flex-direction: row;
+.generic_body{
    font-size: 1.5em
 }

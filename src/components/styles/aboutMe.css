@@ -1,0 +1,39 @@
+.about-me-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 800px; /* Or any maximum width you prefer */
+    margin: auto; /* Center the container */
+  }
+  
+  .about-me-text {
+    flex: 1; /* Takes up remaining space */
+    border: 2px solid #000000;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: auto;
+    word-wrap: break-word;
+    background-color:#e4dede;
+  }
+  
+  .about-me-image {
+    flex: 0 0 auto; /* Does not grow or shrink, size based on content */
+    border: 2px solid #000000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-me-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensures the image is fully visible */
+  }
+  
+  @media (max-width: 768px) {
+    .about-me-container {
+      flex-direction: column;
+    }
+  }
+  

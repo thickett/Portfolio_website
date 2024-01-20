@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import HiddenNavBar from "./HiddenNavBar";
 import "./styles/PageLayout.css";
+import "./styles/Bold.css";
 function GenericLayout({
   pageTitle,
   children,
@@ -15,7 +16,7 @@ function GenericLayout({
         className="pageTitle"
         style={{ textAlign: "center", marginTop: "60px" }}
       >
-        {pageTitle}
+        <p className="Bold"> {pageTitle}</p>
       </div>
       <main>{children}</main>
     </>

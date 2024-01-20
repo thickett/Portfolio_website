@@ -19,7 +19,7 @@ function HomePage() {
         </div>
 
         <section className="additonal-information">
-          <p className="generic">
+          <p className="generic_body">
             Data Science and NLP enthusiast currently working as a{" "}
             <strong>Product Analyst - Conversational AI </strong>at{" "}
             <a

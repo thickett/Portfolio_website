@@ -1,6 +1,6 @@
 /*Navigation array - add to this to create new pages. */
 import routesConfig from "../configs/routesConfig";
-
+import "./styles/navBar.css";
 function HiddenNavBar() {
   return (
     <nav className="navbar navbar-dark bg-dark fixed-top">

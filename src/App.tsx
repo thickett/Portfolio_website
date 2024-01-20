@@ -5,8 +5,12 @@ function App() {
   return (
     <Router>
       <Routes>
-        {routesConfig.map((item) => (
-          <Route path={item.path} element={<item.component />}></Route>
+        {routesConfig.map((item, index) => (
+          <Route
+            path={item.path}
+            element={<item.component />}
+            key={index}
+          ></Route>
         ))}
       </Routes>
     </Router>

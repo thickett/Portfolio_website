@@ -1,9 +1,12 @@
 import GenericLayout from "./GenericLayout";
+import AboutMe from "./aboutMe";
+import GridCards from "./gridCards";
 import "./styles/nameLogoContainer.css";
 import "./styles/bodyText.css";
 import "./styles/SocialMediaIcons.css";
 import "./styles/homePage.css";
 import "./styles/PageLayout.css";
+
 import socialmediaConfig from "../configs/socialmediaConfig";
 function HomePage() {
   return (
@@ -46,7 +49,21 @@ function HomePage() {
                 </a>
               ))}
             </div>
+            <div>
+              <AboutMe
+                imageSrc="src/assets/face_shot.jpg"
+                imageAlt="A picture of me"
+                textContent="yo it is I
+                whats up"
+              ></AboutMe>
+            </div>
           </section>
+          <div>
+            <p className="generic_body">
+              <strong>Recent activity</strong>
+            </p>
+            <GridCards></GridCards>
+          </div>
         </div>
       </GenericLayout>
     </div>

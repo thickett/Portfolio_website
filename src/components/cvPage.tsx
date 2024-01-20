@@ -1,6 +1,6 @@
 import GenericLayout from "./GenericLayout";
 
-function CVPage() {
+function cvPage() {
   return <GenericLayout pageTitle="My CV">{}</GenericLayout>;
 }
-export default CVPage;
+export default cvPage;

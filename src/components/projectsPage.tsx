@@ -1,6 +1,6 @@
 import GenericLayout from "./GenericLayout";
 
-function Projects() {
+function projectsPage() {
   return <GenericLayout pageTitle="My Projects">{}</GenericLayout>;
 }
-export default Projects;
+export default projectsPage;

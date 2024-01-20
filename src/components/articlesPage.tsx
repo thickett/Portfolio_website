@@ -1,6 +1,6 @@
 import GenericLayout from "./GenericLayout";
 
-function Articles() {
+function articlesPage() {
   return <GenericLayout pageTitle="My Articles">{}</GenericLayout>;
 }
-export default Articles;
+export default articlesPage;

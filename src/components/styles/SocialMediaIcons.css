@@ -2,8 +2,8 @@
     text-align: center;
   }
 .Social-media-links a .react-icon {
-    font-size: 48px; 
-    margin: 5px;
+    font-size: 3em; 
+    margin: 0.1em;
     transition: transform 0.2s ease-in-out;
   }
   .Social-media-links a:hover .react-icon {

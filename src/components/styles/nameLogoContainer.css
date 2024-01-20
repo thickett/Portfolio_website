@@ -21,9 +21,9 @@ body, html {
   }
   
   .logo {
-    width: 100px; 
+    width: 6em; 
     height: auto;
-    margin: 0 3px; 
+    margin: 0; 
   }
   
   /* Additional responsive styling */
@@ -32,8 +32,8 @@ body, html {
       font-size: 1.8em; 
     }
     .logo {
-      width: 55px; 
-      margin: 0 1.5px; 
+      width: 1.75em; 
+      margin: 0; 
     }
   }
   

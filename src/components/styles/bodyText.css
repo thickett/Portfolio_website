@@ -1,0 +1,6 @@
+.generic{
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+   font-size: 1.5em
+}

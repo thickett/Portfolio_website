@@ -1,11 +1,5 @@
 /*Navigation array - add to this to create new pages. */
-
-const navItems = [
-  { name: "Home", path: "/" },
-  { name: "Articles", path: "/Articles" },
-  { name: "Projects", path: "/Projects" },
-  { name: "CV", path: "/CV" },
-];
+import routesConfig from "../configs/routesConfig";
 
 function HiddenNavBar() {
   return (
@@ -22,7 +16,11 @@ function HiddenNavBar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <a className="navbar-brand" href="/">
-          Callum Thickett
+          <img
+            src="src/assets/logo_idea_1-removebg-preview.png"
+            alt="Logo"
+            className="logo"
+          />
         </a>
 
         <div
@@ -33,7 +31,11 @@ function HiddenNavBar() {
         >
           <div className="offcanvas-header">
             <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">
-              Callum Thickett
+              <img
+                src="src/assets/logo_idea_1-removebg-preview.png"
+                alt="Logo"
+                className="logo"
+              />
             </h5>
             <button
               type="button"
@@ -44,7 +46,7 @@ function HiddenNavBar() {
           </div>
           <div className="offcanvas-body">
             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-              {navItems.map((item) => (
+              {routesConfig.map((item) => (
                 <li className="nav-item" key={item.name}>
                   <a className="nav-link" aria-current="page" href={item.path}>
                     {item.name}

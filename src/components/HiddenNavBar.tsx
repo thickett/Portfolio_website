@@ -1,3 +1,12 @@
+/*Navigation array - add to this to create new pages. */
+
+const navItems = [
+  { name: "Home", path: "/" },
+  { name: "Articles", path: "/Articles" },
+  { name: "Projects", path: "/Projects" },
+  { name: "CV", path: "/CV" },
+];
+
 function HiddenNavBar() {
   return (
     <nav className="navbar navbar-dark bg-dark fixed-top">
@@ -35,31 +44,13 @@ function HiddenNavBar() {
           </div>
           <div className="offcanvas-body">
             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/Articles">
-                  My Articles
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/Projects">
-                  Projects
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/Demos">
-                  Demos
-                </a>
-                <li className="nav-item">
-                  <a className="nav-link" href="/CV">
-                    CV
+              {navItems.map((item) => (
+                <li className="nav-item" key={item.name}>
+                  <a className="nav-link" aria-current="page" href={item.path}>
+                    {item.name}
                   </a>
                 </li>
-              </li>
+              ))}
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"

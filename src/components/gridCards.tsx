@@ -15,13 +15,13 @@ interface allContent {
 
 function GridCards({ all_content }: allContent) {
   return (
-    <div className="row row-cols-0 row-cols-md-3 g-4">
+    <div className="row row-cols-0 row-cols-md-3 g-1">
       {all_content.map((content) => (
         <a
           className="grid-cards-link"
           href={content.link}
           target="_blank"
-          rel="noopener noreferer"
+          rel="noopener noreferrer"
         >
           <div className="card h-100">
             <img

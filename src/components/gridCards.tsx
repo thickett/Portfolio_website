@@ -1,41 +1,44 @@
-interface GridCardsProps {
+import "./styles/gridCards.css";
+
+interface contentDescription {
   title: string;
-  description: string;
+  content: string;
+  link: string;
   imagesrc: string;
   imagealt: string;
+  content_type: string;
 }
 
-function GridCards() {
+interface allContent {
+  all_content: contentDescription[];
+}
+
+function GridCards({ all_content }: allContent) {
   return (
-    <div className="row row-cols-1 row-cols-md-3 g-4">
-      <div className="col">
-        <div className="card">
-          <img
-            src="src/assets/medium_article_image_one.webp"
-            className="card-img-top"
-            alt="..."
-          ></img>
-          <div className="card-body">
-            <h5 className="card-title">
-              Effortless Insights: Your Guide to Creating LLM-Based AI for
-              Advanced Database Queries and Analysis
-            </h5>
-            <p className="card-text">
-              In the ever-evolving landscape of data analysis, a challenge often
-              lies in translating complex data queries into clear, actionable
-              insights. Consider a scenario where a business needs to understand
-              how a particular subset of users are interacting with one of their
-              products. Traditionally, this would involve navigating through
-              intricate database schemas and writing detailed SQL queries — a
-              daunting task for many product-oriented professionals, and thus a
-              dependency is created on the data teams.
-            </p>
-            <a href="#" className="btn btn-primary">
-              Go somewhere
-            </a>
+    <div className="row row-cols-0 row-cols-md-3 g-4">
+      {all_content.map((content) => (
+        <a
+          className="grid-cards-link"
+          href={content.link}
+          target="_blank"
+          rel="noopener noreferer"
+        >
+          <div className="card h-100">
+            <img
+              className="card-img-top"
+              src={content.imagesrc}
+              alt={content.imagealt}
+            ></img>
+            <div className="card-body">
+              <h5 className="card-title">{content.title}</h5>
+              <p className="card-text">{content.content}</p>
+              <p className="card-text">
+                <small className="text-muted">{content.content_type}</small>
+              </p>
+            </div>
           </div>
-        </div>
-      </div>
+        </a>
+      ))}
     </div>
   );
 }

@@ -35,6 +35,29 @@ export const gitHubContent = [
       "An image of of a subset of activation layers for each of the 4 groups in the study.",
     content_type: "Github Repository",
   },
+
+  {
+    title:
+      "Author Identity Prediction: NLP, LDA, hyperopt, webscraping, multi-label classification",
+    content:
+      "A piece of work that started as a university project where in A aim to see if an author can be identified purely on the content that they have written, more abstractly we are trying to understand whether a persons identity is recorded when they create natural language content in the same way it may be if they were to engage in conversation. \n f1-score: 0.77 across a few dozen BBC authors.",
+    link: "https://github.com/thickett/data-science-projects/tree/main/Author_identity_prediction",
+    imagesrc: "src/assets/Author Identity Predictions.png",
+    imagealt:
+      "An image of a performance curve and a learning rate curve for three algorithms; xgboost's implementation of a GBM, sklearn's implementation of a GBM, and naieve bayes.",
+    content_type: "Github Repository",
+  },
+
+  // {
+  //   title:
+  //     "Molecular energy predictions: scalable ML pipelines, big data, pyspark, Hadoop, MLlib",
+  //   content:
+  //     "This was a bit of a throw back project to my chemistry days. I wanted to explore how the world of data science handles big data. What better way is there to do this than to look at chemical space! \n Chemical space exists in the order of 10x^60 so we actually only consdier a subset of it here. the goal though was simple; from a variety of chemical features, both explicit and implicit we aim to predict single point molecular energies.",
+  //   link: "https://github.com/thickett/data-science-projects/tree/main/Molecular%20Energy%20predictions",
+  //   imagesrc: "src/assets/image_molecular_predictions.png",
+  //   imagealt: "An image of a DALL-E generated molecule.",
+  //   content_type: "Github Repository",
+  // },
 ];
 
 export const allContent = [...mediumContent, ...gitHubContent];

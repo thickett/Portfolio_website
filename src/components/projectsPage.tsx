@@ -5,16 +5,16 @@ import { Container } from "react-bootstrap";
 
 function projectsPage() {
   return (
-    <GenericLayoutBackPages
-      pageTitle="Projects"
-      pageSubTitle="These are all my personal projects"
-    >
-      <Container>
+    <>
+      <GenericLayoutBackPages
+        pageTitle="Projects"
+        pageSubTitle="These are all my personal projects"
+      >
         <div>
           <GridCards all_content={gitHubContent}></GridCards>
         </div>
-      </Container>
-    </GenericLayoutBackPages>
+      </GenericLayoutBackPages>
+    </>
   );
 }
 export default projectsPage;

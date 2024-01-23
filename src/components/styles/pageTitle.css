@@ -1,0 +1,16 @@
+.horizontal-line-bottom {
+    border-bottom: 0.05em solid #B9B2AA;;
+}
+
+.center-text-margin {
+    text-align: center;
+    margin-top: 10%;
+}
+.title-text-large {
+    font-size: 3.5em;
+    font-weight: 400;
+}
+.title-text-sub {
+    font-size: 1.25em;
+    font-weight:300;
+}

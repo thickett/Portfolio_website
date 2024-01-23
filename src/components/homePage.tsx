@@ -1,6 +1,7 @@
 import GenericLayout from "./GenericLayout";
 import AboutMe from "./aboutMe";
 import GridCards from "./gridCards";
+import { allContent } from "../configs/contentConfig";
 import "./styles/nameLogoContainer.css";
 import "./styles/bodyText.css";
 import "./styles/SocialMediaIcons.css";
@@ -32,7 +33,7 @@ function HomePage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                stepstones
+                Stepstones
               </a>
               .
             </p>
@@ -52,17 +53,18 @@ function HomePage() {
             <div>
               <AboutMe
                 imageSrc="src/assets/face_shot.jpg"
-                imageAlt="A picture of me"
+                imageAlt="A picture of me smiling"
                 textContent="yo it is I
                 whats up"
               ></AboutMe>
             </div>
           </section>
           <div>
-            <p className="generic_body">
+            <p className="generic_body large-vertical-margin horizontal-line-top">
               <strong>Recent activity</strong>
             </p>
-            <GridCards></GridCards>
+
+            <GridCards all_content={allContent}></GridCards>
           </div>
         </div>
       </GenericLayout>
